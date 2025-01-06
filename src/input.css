@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .word-space-2 {
+      word-spacing: 0.5rem; 
+    }
+    .word-space-4 {
+      word-spacing: 1rem;
+    }
+   
+  }
