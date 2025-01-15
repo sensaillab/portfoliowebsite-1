@@ -52,7 +52,7 @@
             </nav>
 
             <!-- MOBILE NAV (visible below md) -->
-            <nav class="md:hidden ml-auto w-auto bg-slate-800
+            <nav class="md:hidden ml-auto bg-slate-800
                    drop-shadow-xl border border-gray-700
                    backdrop-blur-md rounded-md p-1">
                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center w-10 h-10 justify-center
@@ -129,7 +129,8 @@
             </div>
         </section>
 
-        <section id="Projects" class="py-12 bg-slate-800 text-white">
+        <section id="Projects" class="rounded-md 
+        border dark:border-gray-700 py-12 bg-slate-800 text-white">
             <!-- Container to constrain content width and center it -->
             <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -147,27 +148,43 @@
                 </p>
 
                 <!-- Card grid (3 columns on lg+, 2 on sm+, 1 on mobile) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center
              gap-8">
                     <!-- Card #1 -->
-                    <div
-                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
-                            </g>
-                        </svg> <a href="#Home">
+                    <div class="cardTemplate">
+                        <div class="relative w-7 h-10">
+                            <!-- Default SVG -->
+                            <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3 absolute transition-opacity hover:opacity-0"
+                                aria-hidden="true" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
+                                </g>
+                            </svg>
+
+                            <!-- Hover SVG -->
+                            <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3 absolute opacity-0 transition-opacity hover:opacity-100"
+                                aria-hidden="true" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M0 1H5L8 3H13V5H3.7457L2.03141 11H4.11144L5.2543 7H16L14 14H0V1Z"
+                                        fill="#9ca3af"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <a href="#Home">
                             <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                 Portfolio Website #1</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
-                            process
-                            on how to certify for your weekly benefits:</p>
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 break-words">My first
+                            ever fully completed
+                            portfolio template website, built using raw HTML, the Tailwind CSS framework, and React for
+                            small functionalities.</p>
                         <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                            See our guideline
+                            My GitHub for more details
                             <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -179,24 +196,29 @@
 
 
                     <!-- Card #2 -->
-                    <div
-                        class="cursor-not-allowed max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
-                            </g>
-                        </svg> <a href="#Home">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                Portfolio Website #1</h5>
+                    <div class="cursor-not-allowed opacity-50 cardTemplate ">
+                        <div class="relative w-7 h-10">
+                            <!-- Default SVG -->
+                            <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3 absolute duration-300"
+                                aria-hidden="true" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <a>
+                            <h5
+                                class="cursor-not-allowed mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                Nothing to see here...</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
-                            process
-                            on how to certify for your weekly benefits:</p>
-                        <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                            See our guideline
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">No projects in this card for now...
+                            may be coming soon...</p>
+                        <a
+                            class="cursor-not-allowed inline-flex font-medium items-center text-blue-600 hover:underline">
+                            ...
                             <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -208,24 +230,29 @@
 
 
                     <!-- Card #3 -->
-                    <div
-                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
-                            </g>
-                        </svg> <a href="#Home">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                Portfolio Website #1</h5>
+                    <div class="cursor-not-allowed opacity-50 cardTemplate ">
+                        <div class="relative w-7 h-10">
+                            <!-- Default SVG -->
+                            <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3 absolute duration-300"
+                                aria-hidden="true" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <a>
+                            <h5
+                                class="cursor-not-allowed mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                Nothing to see here...</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
-                            process
-                            on how to certify for your weekly benefits:</p>
-                        <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                            See our guideline
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">No projects in this card for now...
+                            may be coming soon...</p>
+                        <a
+                            class="cursor-not-allowed inline-flex font-medium items-center text-blue-600 hover:underline">
+                            ...
                             <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -235,26 +262,30 @@
                         </a>
                     </div>
 
-
                     <!-- Card #4 -->
-                    <div
-                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
-                            </g>
-                        </svg> <a href="#Home">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                Portfolio Website #1</h5>
+                    <div class="cursor-not-allowed opacity-50 cardTemplate ">
+                        <div class="relative w-7 h-10">
+                            <!-- Default SVG -->
+                            <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3 absolute duration-300"
+                                aria-hidden="true" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <a>
+                            <h5
+                                class="cursor-not-allowed mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                Nothing to see here...</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
-                            process
-                            on how to certify for your weekly benefits:</p>
-                        <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                            See our guideline
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">No projects in this card for now...
+                            may be coming soon...</p>
+                        <a
+                            class="cursor-not-allowed inline-flex font-medium items-center text-blue-600 hover:underline">
+                            ...
                             <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -266,24 +297,29 @@
 
 
                     <!-- Card #5 -->
-                    <div
-                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
-                            </g>
-                        </svg> <a href="#Home">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                Portfolio Website #1</h5>
+                    <div class="cursor-not-allowed opacity-50 cardTemplate ">
+                        <div class="relative w-7 h-10">
+                            <!-- Default SVG -->
+                            <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3 absolute duration-300"
+                                aria-hidden="true" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <a>
+                            <h5
+                                class="cursor-not-allowed mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                Nothing to see here...</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
-                            process
-                            on how to certify for your weekly benefits:</p>
-                        <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                            See our guideline
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">No projects in this card for now...
+                            may be coming soon...</p>
+                        <a
+                            class="cursor-not-allowed inline-flex font-medium items-center text-blue-600 hover:underline">
+                            ...
                             <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -295,24 +331,29 @@
 
 
                     <!-- Card #6 -->
-                    <div
-                        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
-                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
-                            </g>
-                        </svg> <a href="#Home">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                Portfolio Website #1</h5>
+                    <div class="cursor-not-allowed opacity-50 cardTemplate ">
+                        <div class="relative w-7 h-10">
+                            <!-- Default SVG -->
+                            <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3 absolute duration-300"
+                                aria-hidden="true" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M0 1H6L9 4H16V14H0V1Z" fill="#374151"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <a>
+                            <h5
+                                class="cursor-not-allowed mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                Nothing to see here...</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline
-                            process
-                            on how to certify for your weekly benefits:</p>
-                        <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline">
-                            See our guideline
+                        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">No projects in this card for now...
+                            may be coming soon...</p>
+                        <a
+                            class="cursor-not-allowed inline-flex font-medium items-center text-blue-600 hover:underline">
+                            ...
                             <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -321,6 +362,16 @@
                             </svg>
                         </a>
                     </div>
+                    <div class="col-span-full flex justify-center items-center">
+                        <a href="#Contact">
+                            <button type="button" class="text-white bg-blue-600 hover:bg-blue-700
+                           font-medium rounded-lg text-sm px-6 py-2
+                           focus:outline-none focus:ring-4 focus:ring-blue-800">
+                                See More...
+                            </button>
+                        </a>
+                    </div>
+
 
                 </div>
         </section>

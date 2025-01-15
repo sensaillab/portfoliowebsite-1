@@ -3,13 +3,28 @@
 @tailwind utilities;
 
 @layer utilities {
-    
 
-    .word-space-2 {
-      word-spacing: 0.5rem; 
-    }
-    .word-space-4 {
-      word-spacing: 1rem;
-    }
-   
+  .cardTemplate {
+    max-width: 24rem;
+    padding: 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+    border-width: 1px;
+    border-radius: 0.5rem;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
   }
+
+  .word-space-2 {
+    word-spacing: 0.5rem;
+  }
+
+  .word-space-4 {
+    word-spacing: 1rem;
+  }
+
+}
