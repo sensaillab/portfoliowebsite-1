@@ -17,7 +17,19 @@
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 
+    /* Flexbox setup for consistent layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* Ensures the card takes full height */
   }
+
+  .cardTemplate a:last-child {
+    margin-top: auto;
+    /* Push the last child (link) to the bottom */
+  }
+
 
   .word-space-2 {
     word-spacing: 0.5rem;
